@@ -16,25 +16,30 @@
             font-family: 'PingFang TC', 'Microsoft JhengHei', 'Noto Sans TC', sans-serif;
             background-color: #f8fafc;
         }
+        /* 優化手機端繁體中文斷行，防止詞彙被尷尬拆開 */
+        .keep-together {
+            word-break: keep-all;
+            overflow-wrap: break-word;
+        }
     </style>
 </head>
 <body class="text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-900">
 
     <!-- Light & Modern Hero Section -->
-    <header class="bg-gradient-to-b from-blue-50 via-indigo-50/50 to-slate-50 border-b border-slate-200 py-16 px-6 lg:px-20 text-center relative overflow-hidden">
+    <header class="bg-gradient-to-b from-blue-50 via-indigo-50/50 to-slate-50 border-b border-slate-200 py-8 md:py-16 px-4 sm:px-6 lg:px-20 text-center relative overflow-hidden">
         <div class="max-w-4xl mx-auto relative z-10">
-            <!-- Badge --> 
-            <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
-            <div class="flex justify-center">
-            <img src="https://ws.hl.gov.tw/001/Upload/404/sites/pagebackimage/fff729bd-7167-4ee5-a6b9-98742ea754ce.gif""
-               alt="花蓮縣玉里地政事務所"
-               class="w-full max-w-[735px] h-auto md:h-[138px] object-contain">
-                </div><br>
-                <span class="text-blue-600">地政業務生成式 AI 應用指引</span>
+            
+            <h1 class="text-2xl sm:text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4 md:mb-6">
+                <div class="flex justify-center mb-4">
+                    <img src="https://ws.hl.gov.tw/001/Upload/404/sites/pagebackimage/fff729bd-7167-4ee5-a6b9-98742ea754ce.gif"
+                         alt="花蓮縣玉里地政事務所"
+                         class="w-full max-w-[735px] h-auto md:h-[138px] object-contain px-2">
+                </div>
+                <span class="text-blue-600 block sm:inline mt-2 keep-together">地政業務生成式 AI 應用指引</span>
             </h1>
             
-            <p class="text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                生成式 AI 可作為大量資料彙整與輔助業務之工具。惟現行地政各業務領域尚未訂定統一標準，為降低資安風險，使用前請務必瞭解資料劃分與部署規範。
+            <p class="text-sm sm:text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed keep-together px-2">
+                <span class="inline-block">生成式 AI 可作為大量資料彙整</span><span class="inline-block">與輔助業務之工具。</span><span class="inline-block">惟現行地政各業務領域</span><span class="inline-block">尚未訂定統一標準，</span><span class="inline-block">為降低資安風險，</span><span class="inline-block">使用前請務必瞭解資料劃分</span><span class="inline-block">與部署規範。</span>
             </p>
         </div>
         
@@ -44,31 +49,31 @@
     </header>
 
     <!-- Main Content Container -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         
         <!-- Risk Notice Card (Full Width) -->
-        <section class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 md:p-8 mb-12 hover:shadow-md transition duration-300">
-            <div class="flex flex-col md:flex-row items-start gap-5">
-                <div class="bg-amber-100 text-amber-700 p-4 rounded-xl flex-shrink-0">
-                    <i class="fas fa-triangle-exclamation text-3xl"></i>
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-5 md:p-8 mb-8 md:mb-12 hover:shadow-md transition duration-300">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 text-center md:text-left">
+                <div class="bg-amber-100 text-amber-700 p-3.5 md:p-4 rounded-xl flex-shrink-0">
+                    <i class="fas fa-triangle-exclamation text-2xl md:text-3xl"></i>
                 </div>
-                <div>
-                    <h2 class="text-xl md:text-2xl font-bold text-slate-900 mb-2">現行資安風險提示</h2>
-                    <p class="text-slate-600 text-base leading-relaxed mb-4">
+                <div class="w-full">
+                    <h2 class="text-xl md:text-2xl font-bold text-slate-900 mb-2 keep-together">現行資安風險提示</h2>
+                    <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-4 keep-together">
                         地政各業務尚未訂定統一之 AI 應用標準與限制範疇。倘若恣意將未經公開之公務資訊或機敏資料上傳至外部系統，將產生以下風險：
                     </p>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-100 flex items-center text-base font-medium text-slate-900">
-                            <i class="fas fa-lock-open text-amber-500 mr-2.5"></i>
-                            未公開公務資訊遭外洩
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
+                        <div class="bg-slate-50 p-3 md:p-3.5 rounded-lg border border-slate-100 flex items-center justify-start text-sm md:text-base font-medium text-slate-900">
+                            <i class="fas fa-lock-open text-amber-500 mr-3 flex-shrink-0"></i>
+                            <span class="keep-together">未公開公務資訊遭外洩</span>
                         </div>
-                        <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-100 flex items-center text-base font-medium text-slate-900">
-                            <i class="fas fa-database text-amber-500 mr-2.5"></i>
-                            機敏資料遭外部模型訓練吸收
+                        <div class="bg-slate-50 p-3 md:p-3.5 rounded-lg border border-slate-100 flex items-center justify-start text-sm md:text-base font-medium text-slate-900">
+                            <i class="fas fa-database text-amber-500 mr-3 flex-shrink-0"></i>
+                            <span class="keep-together">機敏資料遭外部模型訓練吸收</span>
                         </div>
-                        <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-100 flex items-center text-base font-medium text-slate-900">
-                            <i class="fas fa-robot text-amber-500 mr-2.5"></i>
-                            AI 幻覺導致行政決策錯誤
+                        <div class="bg-slate-50 p-3 md:p-3.5 rounded-lg border border-slate-100 flex items-center justify-start text-sm md:text-base font-medium text-slate-900">
+                            <i class="fas fa-robot text-amber-500 mr-3 flex-shrink-0"></i>
+                            <span class="keep-together">AI 幻覺導致行政決策錯誤</span>
                         </div>
                     </div>
                 </div>
@@ -76,59 +81,62 @@
         </section>
 
         <!-- Policy & Deployment Scenarios -->
-        <section class="mb-12">
-            <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6 text-center">生成式 AI 使用規範與部署原則</h2>
+        <section class="mb-8 md:mb-12">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mb-6 text-center keep-together">生成式 AI 使用規範與部署原則</h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 
                 <!-- Scenario 1: Non-Sensitive Data -->
-                <div class="bg-emerald-50/60 rounded-2xl border border-emerald-200/80 p-6 md:p-8 flex flex-col justify-between">
+                <div class="bg-emerald-50/60 rounded-2xl border border-emerald-200/80 p-5 md:p-8 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center gap-3 mb-4">
-                            <span class="bg-emerald-100 text-emerald-800 p-3 rounded-xl">
-                                <i class="fas fa-cloud text-xl"></i>
+                        <div class="flex items-center gap-3 mb-3 md:mb-4">
+                            <span class="bg-emerald-100 text-emerald-800 p-2.5 md:p-3 rounded-xl flex-shrink-0">
+                                <i class="fas fa-cloud text-lg md:text-xl"></i>
                             </span>
                             <div>
-                                <span class="text-xs font-semibold text-emerald-700 uppercase tracking-wider">情境一</span>
-                                <h3 class="text-xl font-bold text-slate-900">處理「無機敏資料」</h3>
+                                <span class="text-xs font-semibold text-emerald-700 uppercase tracking-wider block">情境一</span>
+                                <h3 class="text-lg md:text-xl font-bold text-slate-900 keep-together">處理「無機敏資料」</h3>
                             </div>
                         </div>
-                        <p class="text-slate-600 text-base mb-6 leading-relaxed">
+                        <p class="text-slate-600 text-sm md:text-base mb-5 leading-relaxed keep-together">
                             輸入指令與公務內容<strong>完全不包含任何機敏資料、個資或未公開資訊</strong>（例如：公開法規研析摘要、新聞稿字詞潤飾、一般性英文翻譯等）。
                         </p>
                     </div>
-                    <div class="bg-white p-4 rounded-xl border border-emerald-200/60 shadow-sm">
-                        <p class="font-bold text-emerald-800 flex items-center text-sm md:text-base">
-                            <i class="fas fa-circle-check text-emerald-600 mr-2"></i> 得使用非地端（雲端）生成式 AI
+                    <div class="bg-white p-3.5 md:p-4 rounded-xl border border-emerald-200/60 shadow-sm">
+                        <p class="font-bold text-emerald-800 flex items-center text-sm md:text-base keep-together">
+                            <i class="fas fa-circle-check text-emerald-600 mr-2 flex-shrink-0"></i> 得使用非地端（雲端）生成式 AI
                         </p>
-                        <p class="text-xs text-slate-500 mt-1">例如：公用 ChatGPT、Gemini 等，惟內容仍需經人工審核確定。</p>
+                        <p class="text-xs text-slate-500 mt-1 keep-together">例如：公用 ChatGPT、Gemini 等，惟內容仍需經人工審核確定。</p>
                     </div>
                 </div>
 
                 <!-- Scenario 2: Sensitive Data -->
-                <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 md:p-8 text-white flex flex-col justify-between shadow-md">
+                <div class="bg-slate-900 rounded-2xl border border-slate-800 p-5 md:p-8 text-white flex flex-col justify-between shadow-md">
                     <div>
-                        <div class="flex items-center gap-3 mb-4">
-                            <span class="bg-blue-900/80 text-blue-300 p-3 rounded-xl border border-blue-700/50">
-                                <i class="fas fa-server text-xl"></i>
+                        <div class="flex items-center gap-3 mb-3 md:mb-4">
+                            <span class="bg-blue-900/80 text-blue-300 p-2.5 md:p-3 rounded-xl border border-blue-700/50 flex-shrink-0">
+                                <i class="fas fa-server text-lg md:text-xl"></i>
                             </span>
                             <div>
-                                <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">情境二</span>
-                                <h3 class="text-xl font-bold text-white">涉及「機敏資料」</h3>
+                                <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider block">情境二</span>
+                                <h3 class="text-lg md:text-xl font-bold text-white keep-together">涉及「機敏資料」</h3>
                             </div>
                         </div>
-                        <p class="text-slate-300 text-base mb-6 leading-relaxed">
+                        <p class="text-slate-300 text-sm md:text-base mb-5 leading-relaxed keep-together">
                             當業務內容涉及民眾個資、財產清冊、未公開決策草案或會議紀錄等資訊時，<strong>嚴禁使用外部雲端服務</strong>。
                         </p>
                     </div>
-                    <div class="bg-slate-800 p-4 rounded-xl border border-slate-700/80 space-y-2 text-sm">
-                        <p class="font-semibold text-blue-300 flex items-center">
-                            <i class="fas fa-lock text-blue-400 mr-2"></i> 僅限使用「封閉式地端部署」模型，中央目前尚未提供。
+                    <div class="bg-slate-800 p-3.5 md:p-4 rounded-xl border border-slate-700/80 space-y-2 text-xs md:text-sm">
+                        <p class="font-semibold text-blue-300 flex items-start leading-snug">
+                            <i class="fas fa-lock text-blue-400 mr-2 mt-0.5 flex-shrink-0"></i> 
+                            <span class="keep-together">僅限使用「封閉式地端部署」模型（中央目前尚未提供）</span>
                         </p>
-                        <p class="font-semibold text-blue-300 flex items-center">
-                            <i class="fas fa-shield-check text-blue-400 mr-2"></i> 需經相關權責單位確認系統環境安全性
+                        <p class="font-semibold text-blue-300 flex items-start leading-snug">
+                            <i class="fas fa-shield-check text-blue-400 mr-2 mt-0.5 flex-shrink-0"></i> 
+                            <span class="keep-together">需經相關權責單位確認系統環境安全性</span>
                         </p>
-                        <p class="font-semibold text-blue-300 flex items-center">
-                            <i class="fas fa-layer-group text-blue-400 mr-2"></i> 依文書或資訊機密等級分級使用
+                        <p class="font-semibold text-blue-300 flex items-start leading-snug">
+                            <i class="fas fa-layer-group text-blue-400 mr-2 mt-0.5 flex-shrink-0"></i> 
+                            <span class="keep-together">依文書或資訊機密等級分級使用</span>
                         </p>
                     </div>
                 </div>
@@ -137,94 +145,94 @@
         </section>
 
         <!-- Sensitive Data Checklist (Exactly 10 Items, Land Admin Domain Specific) -->
-        <section class="bg-red-50/50 rounded-2xl p-6 md:p-10 border border-red-100 shadow-sm mb-12">
-            <div class="text-center max-w-3xl mx-auto mb-8">
-                <div class="inline-flex items-center justify-center w-12 h-12 bg-red-100 text-red-600 rounded-full mb-3">
-                    <i class="fas fa-ban text-xl"></i>
+        <section class="bg-red-50/50 rounded-2xl p-5 sm:p-6 md:p-10 border border-red-100 shadow-sm mb-8 md:mb-12">
+            <div class="text-center max-w-3xl mx-auto mb-6 md:mb-8">
+                <div class="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-red-100 text-red-600 rounded-full mb-2 md:mb-3">
+                    <i class="fas fa-ban text-lg md:text-xl"></i>
                 </div>
-                <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2">嚴禁上傳！何謂「機敏資料」？</h2>
-                <p class="text-slate-600 text-base">
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mb-2 keep-together">嚴禁上傳！何謂「機敏資料」？</h2>
+                <p class="text-slate-600 text-xs sm:text-sm md:text-base keep-together">
                     請確保絕對不將下列 <strong>10 大類</strong> 地政及公務機敏資料輸入至未經驗證之雲端 AI 工具：
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                 <!-- Item 1 -->
-                <div class="flex items-start bg-white p-4 rounded-xl shadow-sm border border-slate-200/80">
-                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">1</div>
-                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                <div class="flex items-start bg-white p-3.5 md:p-4 rounded-xl shadow-sm border border-slate-200/80">
+                    <div class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3 font-bold text-xs md:text-sm">1</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-relaxed keep-together">
                         包含身分證字號、姓名、聯絡電話、住址等<strong>民眾個人資料</strong>。
                     </p>
                 </div>
 
                 <!-- Item 2 -->
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
-                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">2</div>
-                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                <div class="flex items-start bg-white p-3.5 md:p-4 rounded-xl shadow-sm border border-slate-200/80">
+                    <div class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3 font-bold text-xs md:text-sm">2</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-relaxed keep-together">
                         未經公開之<strong>內部會議紀錄、會議錄音檔</strong>或文字逐字稿。
                     </p>
                 </div>
 
                 <!-- Item 3 -->
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
-                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">3</div>
-                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                <div class="flex items-start bg-white p-3.5 md:p-4 rounded-xl shadow-sm border border-slate-200/80">
+                    <div class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3 font-bold text-xs md:text-sm">3</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-relaxed keep-together">
                         土地及建物所有權人之<strong>詳細財產清冊與歸戶總冊資訊</strong>。
                     </p>
                 </div>
 
                 <!-- Item 4 -->
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
-                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">4</div>
-                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                <div class="flex items-start bg-white p-3.5 md:p-4 rounded-xl shadow-sm border border-slate-200/80">
+                    <div class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3 font-bold text-xs md:text-sm">4</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-relaxed keep-together">
                         尚未對外公告之<strong>地價查估草案</strong>、公告土地現值及地價評議資料。
                     </p>
                 </div>
 
                 <!-- Item 5 -->
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
-                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">5</div>
-                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                <div class="flex items-start bg-white p-3.5 md:p-4 rounded-xl shadow-sm border border-slate-200/80">
+                    <div class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3 font-bold text-xs md:text-sm">5</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-relaxed keep-together">
                         法院查封、假扣押、破產等<strong>限制登記內部查辦與審查案件資訊</strong>。
                     </p>
                 </div>
 
                 <!-- Item 6 -->
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
-                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">6</div>
-                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                <div class="flex items-start bg-white p-3.5 md:p-4 rounded-xl shadow-sm border border-slate-200/80">
+                    <div class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3 font-bold text-xs md:text-sm">6</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-relaxed keep-together">
                         民眾檢舉違規案件（如違規使用、預售屋違規）之<strong>檢舉人身分與調查細節</strong>。
                     </p>
                 </div>
 
                 <!-- Item 7 -->
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
-                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">7</div>
-                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                <div class="flex items-start bg-white p-3.5 md:p-4 rounded-xl shadow-sm border border-slate-200/80">
+                    <div class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3 font-bold text-xs md:text-sm">7</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-relaxed keep-together">
                         未決行或未經公開之<strong>公文簽呈、擬辦意見及內部決策評估報告</strong>。
                     </p>
                 </div>
 
                 <!-- Item 8 -->
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
-                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">8</div>
-                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                <div class="flex items-start bg-white p-3.5 md:p-4 rounded-xl shadow-sm border border-slate-200/80">
+                    <div class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3 font-bold text-xs md:text-sm">8</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-relaxed keep-together">
                         區段徵收、市地重劃或農地重劃之<strong>補償費發放清冊與估算底冊</strong>。
                     </p>
                 </div>
 
                 <!-- Item 9 -->
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
-                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">9</div>
-                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                <div class="flex items-start bg-white p-3.5 md:p-4 rounded-xl shadow-sm border border-slate-200/80">
+                    <div class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3 font-bold text-xs md:text-sm">9</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-relaxed keep-together">
                         涉及訴願、行政訴訟或國家賠償案件之<strong>內部法律諮詢與法制研判資料</strong>。
                     </p>
                 </div>
 
                 <!-- Item 10 -->
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
-                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">10</div>
-                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                <div class="flex items-start bg-white p-3.5 md:p-4 rounded-xl shadow-sm border border-slate-200/80">
+                    <div class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3 font-bold text-xs md:text-sm">10</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-relaxed keep-together">
                         採購案件之<strong>招標文件草案、評選委員名單及底價表</strong>。
                     </p>
                 </div>
@@ -232,16 +240,16 @@
         </section>
 
         <!-- Reference Links Section -->
-        <section class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 md:p-8 text-center">
-            <h2 class="text-xl md:text-2xl font-bold text-slate-900 mb-3">參考指引與法規規範</h2>
-            <p class="text-slate-600 text-sm md:text-base mb-6 max-w-2xl mx-auto">
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-5 md:p-8 text-center">
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mb-2 md:mb-3 keep-together">參考指引與法規規範</h2>
+            <p class="text-slate-600 text-xs sm:text-sm md:text-base mb-5 max-w-2xl mx-auto keep-together">
                 請同仁參閱行政院及數位發展部相關指引，共同落實公務機密維護：
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://www.nstc.gov.tw/nstc/attachments/da74d556-5b1b-4cbd-9015-901cce87ff91?" target="_blank" class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-medium transition duration-200 shadow-sm text-sm md:text-base">
+            <div class="flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
+                <a href="https://www.nstc.gov.tw/nstc/attachments/da74d556-5b1b-4cbd-9015-901cce87ff91?" target="_blank" class="inline-flex items-center justify-center px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-medium transition duration-200 shadow-sm text-sm md:text-base keep-together">
                     <i class="fas fa-file-lines mr-2"></i> 行政院使用生成式 AI 參考指引
                 </a>
-                <a href="https://moda.gov.tw/digital-affairs/digital-service/ai-resource/18248" target="_blank" class="inline-flex items-center justify-center px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white rounded-xl font-medium transition duration-200 shadow-sm text-sm md:text-base">
+                <a href="https://moda.gov.tw/digital-affairs/digital-service/ai-resource/18248" target="_blank" class="inline-flex items-center justify-center px-5 py-3 bg-teal-600 hover:bg-teal-700 text-white rounded-xl font-medium transition duration-200 shadow-sm text-sm md:text-base keep-together">
                     <i class="fas fa-book mr-2"></i> 數位部公部門人工智慧應用參考手冊
                 </a>
             </div>
@@ -250,8 +258,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-6 text-center text-xs md:text-sm border-t border-slate-800">
-        <p>© 玉里地政資訊安全宣導. 請遵守公務機密及個人資料保護法相關規定.</p>
+    <footer class="bg-slate-900 text-slate-400 py-6 px-4 text-center text-xs md:text-sm border-t border-slate-800">
+        <p class="keep-together">© 玉里地政資訊安全宣導. 請遵守公務機密及個人資料保護法相關規定.</p>
     </footer>
 
 </body>
