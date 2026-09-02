@@ -13,6 +13,18 @@
         body {
             font-family: 'PingFang TC', 'Microsoft JhengHei', 'Noto Sans TC', sans-serif;
             background-color: #f8fafc;
+            /* 防止選取文字 */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        /* 防止列印：在列印模式下隱藏所有內容，並印出空白 */
+        @media print {
+            html, body {
+                display: none !important;
+            }
         }
     </style>
 </head>
@@ -239,5 +251,34 @@
         </p>
     </footer>
 
+    <script>
+        // 1. 停用右鍵選單
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+
+        // 2. 停用鍵盤快捷鍵 (防複製 Ctrl+C / Cmd+C，防列印 Ctrl+P / Cmd+P，防存檔 Ctrl+S / Cmd+S，防全選 Ctrl+A / Cmd+A)
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey || event.metaKey) {
+                const key = event.key.toLowerCase();
+                if (['c', 'x', 'p', 's', 'a', 'u'].includes(key)) {
+                    event.preventDefault();
+                }
+            }
+        });
+
+        // 3. 停用拖曳功能 (防止拖曳文字或圖片)
+        document.addEventListener('dragstart', function(event) {
+            event.preventDefault();
+        });
+
+        // 4. 停用複製與剪下事件
+        document.addEventListener('copy', function(event) {
+            event.preventDefault();
+        });
+        document.addEventListener('cut', function(event) {
+            event.preventDefault();
+        });
+    </script>
 </body>
 </html>
