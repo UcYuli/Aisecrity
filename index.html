@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="玉里地政事務所">
-    <meta property="og:description" content=" 📢 地政業務生成式AI應用與資安宣導">
-    <meta property="og:url" content="https://ucyuli.github.io/Aisecrity/">
+    <meta property="og:description" content=" 📢 地政業務生成式AI資安宣導">
+    <meta property="og:url" content="https://ucyuli.github.io/UsbProtect/">
     <title>地政業務生成式AI應用與資安宣導</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,103 +16,120 @@
             font-family: 'PingFang TC', 'Microsoft JhengHei', 'Noto Sans TC', sans-serif;
             background-color: #f8fafc;
         }
-        .gradient-bg {
-            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
-        }
     </style>
 </head>
-<body class="text-slate-800 antialiased">
+<body class="text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-900">
 
-    <!-- Hero Section -->
-    <header class="gradient-bg text-white py-16 px-6 lg:px-20 text-center shadow-lg">
-        <h1 class="text-3xl md:text-5xl font-bold mb-4 tracking-wide leading-tight">
-            擁抱創新，堅守資安<br>
-           <h1 class="text-3xl md:text-5xl font-bold mb-4 tracking-wide leading-tight">
-            玉里地政事務所<br>
-            <span class="text-blue-300">地政業務生成式 AI 應用資訊安全宣導</span>
-        </h1>
-        <p class="text-lg md:text-xl max-w-3xl mx-auto text-slate-200 mt-6">
-            生成式 AI 是匯整資料與輔助業務的強大工具，但在應用於地政業務時，我們必須建立正確的資安觀念，嚴格區分資料性質，以防範公務及機敏資訊外洩風險。
-        </p>
+    <!-- Light & Modern Hero Section -->
+    <header class="bg-gradient-to-b from-blue-50 via-indigo-50/50 to-slate-50 border-b border-slate-200 py-16 px-6 lg:px-20 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-100/80 border border-blue-200 text-blue-800 text-sm font-semibold mb-6 shadow-sm">
+                <i class="fas fa-shield-halved text-blue-600"></i>
+                <span>公務資安與資訊安全宣導</span>
+            </div>
+            
+            <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                擁抱創新，堅守資安<br>
+                <span class="text-blue-600">地政業務生成式 AI 應用指引</span>
+            </h1>
+            
+            <p class="text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                生成式 AI 可作為大量資料彙整與輔助業務之工具。惟現行地政各業務領域尚未訂定統一標準，為降低資安風險，使用前請務必瞭解資料劃分與部署規範。
+            </p>
+        </div>
+        
+        <!-- Decorative subtle background blurred circles -->
+        <div class="absolute -top-24 -left-24 w-72 h-72 bg-blue-200/40 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-72 h-72 bg-indigo-200/40 rounded-full blur-3xl pointer-events-none"></div>
     </header>
 
-    <!-- Main Content -->
+    <!-- Main Content Container -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
-        <!-- Pros and Risks Cards -->
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <!-- Pros Card -->
-            <div class="bg-white rounded-2xl shadow-md p-8 border-t-4 border-blue-500 hover:shadow-xl transition duration-300">
-                <div class="flex items-center mb-4">
-                    <div class="bg-blue-100 p-3 rounded-full mr-4">
-                        <i class="fas fa-rocket text-2xl text-blue-600"></i>
-                    </div>
-                    <h2 class="text-2xl font-bold text-slate-800">AI 輔助的優勢</h2>
+        <!-- Risk Notice Card (Full Width) -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 md:p-8 mb-12 hover:shadow-md transition duration-300">
+            <div class="flex flex-col md:flex-row items-start gap-5">
+                <div class="bg-amber-100 text-amber-700 p-4 rounded-xl flex-shrink-0">
+                    <i class="fas fa-triangle-exclamation text-3xl"></i>
                 </div>
-                <ul class="space-y-3 text-slate-600 text-lg">
-                    <li class="flex items-start"><i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i><span>快速進行大量資料彙整與摘要</span></li>
-                    <li class="flex items-start"><i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i><span>加速法規查詢、公文草擬與學習</span></li>
-                    <li class="flex items-start"><i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i><span>提供業務推動的創新靈感與策略建議</span></li>
-                </ul>
-            </div>
-
-            <!-- Risks Card -->
-            <div class="bg-white rounded-2xl shadow-md p-8 border-t-4 border-red-500 hover:shadow-xl transition duration-300">
-                <div class="flex items-center mb-4">
-                    <div class="bg-red-100 p-3 rounded-full mr-4">
-                        <i class="fas fa-shield-virus text-2xl text-red-600"></i>
+                <div>
+                    <h2 class="text-xl md:text-2xl font-bold text-slate-900 mb-2">現行資安風險提示</h2>
+                    <p class="text-slate-600 text-base leading-relaxed mb-4">
+                        目前地政各業務領域尚未訂定統一之 AI 應用標準與限制範疇。倘若恣意將未經公開之公務資訊或機敏資料上傳至外部系統，將產生以下風險：
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-100 flex items-center text-sm font-medium text-slate-700">
+                            <i class="fas fa-lock-open text-amber-500 mr-2.5"></i>
+                            未公開公務資訊遭外洩
+                        </div>
+                        <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-100 flex items-center text-sm font-medium text-slate-700">
+                            <i class="fas fa-database text-amber-500 mr-2.5"></i>
+                            機敏資料遭外部模型訓練吸收
+                        </div>
+                        <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-100 flex items-center text-sm font-medium text-slate-700">
+                            <i class="fas fa-robot text-amber-500 mr-2.5"></i>
+                            AI 幻覺導致行政決策錯誤
+                        </div>
                     </div>
-                    <h2 class="text-2xl font-bold text-slate-800">潛在的資安風險</h2>
                 </div>
-                <p class="text-slate-600 mb-4 text-lg">目前地政各業務領域尚未訂定統一的 AI 應用標準。若恣意使用：</p>
-                <ul class="space-y-3 text-slate-600 text-lg">
-                    <li class="flex items-start"><i class="fas fa-exclamation-triangle text-red-500 mt-1 mr-3"></i><span>易導致未公開之公務資訊外洩</span></li>
-                    <li class="flex items-start"><i class="fas fa-exclamation-triangle text-red-500 mt-1 mr-3"></i><span>機敏資料（如民眾個資、地價草案）遭雲端模型吸收</span></li>
-                    <li class="flex items-start"><i class="fas fa-exclamation-triangle text-red-500 mt-1 mr-3"></i><span>產生不實資訊（AI 幻覺），影響行政處分正確性</span></li>
-                </ul>
             </div>
         </section>
 
-        <!-- Use Cases & Policies -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold text-center text-slate-800 mb-8">生成式 AI 使用規範與部署原則</h2>
+        <!-- Policy & Deployment Scenarios -->
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6 text-center">生成式 AI 使用規範與部署原則</h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 
-                <!-- Safe Usage (Non-Sensitive) -->
-                <div class="bg-emerald-50 rounded-2xl border border-emerald-200 p-8 shadow-sm">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-cloud text-3xl text-emerald-600 mr-4"></i>
-                        <h3 class="text-2xl font-bold text-emerald-900">情境一：處理「無機敏資料」</h3>
-                    </div>
-                    <p class="text-emerald-800 text-lg mb-4">
-                        若您處理的業務內容與輸入指令（Prompt）<strong>完全不包含任何機敏資料、個資或未公開資訊</strong>（例如：單純的法規翻譯、公開新聞稿潤飾、一般性技術問題詢問等）。
-                    </p>
-                    <div class="bg-white p-4 rounded-lg border border-emerald-100">
-                        <p class="font-bold text-emerald-700 flex items-center">
-                            <i class="fas fa-check-circle mr-2"></i> 可使用非地端（雲端）生成式 AI
+                <!-- Scenario 1: Non-Sensitive Data -->
+                <div class="bg-emerald-50/60 rounded-2xl border border-emerald-200/80 p-6 md:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-emerald-100 text-emerald-800 p-3 rounded-xl">
+                                <i class="fas fa-cloud text-xl"></i>
+                            </span>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-700 uppercase tracking-wider">情境一</span>
+                                <h3 class="text-xl font-bold text-slate-900">處理「無機敏資料」</h3>
+                            </div>
+                        </div>
+                        <p class="text-slate-600 text-base mb-6 leading-relaxed">
+                            輸入指令與公務內容<strong>完全不包含任何機敏資料、個資或未公開資訊</strong>（例如：公開法規研析摘要、新聞稿字詞潤飾、一般性英文翻譯等）。
                         </p>
-                        <p class="text-sm text-emerald-600 mt-1">例如：公開版本的 ChatGPT, Claude, Gemini 等工具，但產出結果仍需人工確認。</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-emerald-200/60 shadow-sm">
+                        <p class="font-bold text-emerald-800 flex items-center text-sm md:text-base">
+                            <i class="fas fa-circle-check text-emerald-600 mr-2"></i> 得使用非地端（雲端）生成式 AI
+                        </p>
+                        <p class="text-xs text-slate-500 mt-1">例如：公用 ChatGPT、Gemini 等，惟內容仍需經人工審核確定。</p>
                     </div>
                 </div>
 
-                <!-- Restricted Usage (Sensitive) -->
-                <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8 shadow-lg text-white">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-server text-3xl text-blue-400 mr-4"></i>
-                        <h3 class="text-2xl font-bold text-white">情境二：涉及「機敏資料」</h3>
+                <!-- Scenario 2: Sensitive Data -->
+                <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 md:p-8 text-white flex flex-col justify-between shadow-md">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-blue-900/80 text-blue-300 p-3 rounded-xl border border-blue-700/50">
+                                <i class="fas fa-server text-xl"></i>
+                            </span>
+                            <div>
+                                <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">情境二</span>
+                                <h3 class="text-xl font-bold text-white">涉及「機敏資料」</h3>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-base mb-6 leading-relaxed">
+                            當業務內容涉及民眾個資、財產清冊、未公開決策草案或會議紀錄等資訊時，<strong>嚴禁使用外部雲端服務</strong>。
+                        </p>
                     </div>
-                    <p class="text-slate-300 text-lg mb-4">
-                        當業務內容涉及民眾財產、個資、決策草案等機敏資訊時，<strong>絕對禁止</strong>使用外部雲端 AI 服務。必須遵守以下規範：
-                    </p>
-                    <div class="bg-slate-700 p-4 rounded-lg border border-slate-600 space-y-2">
-                        <p class="font-bold text-blue-300 flex items-center">
-                            <i class="fas fa-lock mr-2"></i> 僅限於封閉式「地端部署」模型
+                    <div class="bg-slate-800 p-4 rounded-xl border border-slate-700/80 space-y-2 text-sm">
+                        <p class="font-semibold text-blue-300 flex items-center">
+                            <i class="fas fa-lock text-blue-400 mr-2"></i> 僅限使用「封閉式地端部署」模型
                         </p>
-                        <p class="font-bold text-blue-300 flex items-center">
-                            <i class="fas fa-user-shield mr-2"></i> 需經相關單位確認系統環境安全性
+                        <p class="font-semibold text-blue-300 flex items-center">
+                            <i class="fas fa-shield-check text-blue-400 mr-2"></i> 需經相關權責單位確認系統環境安全性
                         </p>
-                        <p class="font-bold text-blue-300 flex items-center">
-                            <i class="fas fa-layer-group mr-2"></i> 依文書或資訊機密等級分級使用
+                        <p class="font-semibold text-blue-300 flex items-center">
+                            <i class="fas fa-layer-group text-blue-400 mr-2"></i> 依文書或資訊機密等級分級使用
                         </p>
                     </div>
                 </div>
@@ -120,89 +137,122 @@
             </div>
         </section>
 
-        <!-- Sensitive Data Examples Section (NEW) -->
-        <section class="bg-red-50 rounded-2xl p-8 lg:p-10 border border-red-100 shadow-sm mb-16">
-            <div class="text-center mb-8">
-                <i class="fas fa-ban text-5xl text-red-500 mb-4"></i>
-                <h2 class="text-3xl font-bold text-slate-800 mb-3">何謂「機敏資料」？</h2>
-                <p class="text-lg text-red-700 max-w-3xl mx-auto font-medium">
-                    請確保絕對不會將以下類型之資料，輸入至任何未經驗證的非地端（雲端）生成式 AI 工具中。以下為地政與公部門常見之機敏資料範例：
+        <!-- Sensitive Data Checklist (Exactly 10 Items, Land Admin Domain Specific) -->
+        <section class="bg-red-50/50 rounded-2xl p-6 md:p-10 border border-red-100 shadow-sm mb-12">
+            <div class="text-center max-w-3xl mx-auto mb-8">
+                <div class="inline-flex items-center justify-center w-12 h-12 bg-red-100 text-red-600 rounded-full mb-3">
+                    <i class="fas fa-ban text-xl"></i>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2">嚴禁上傳！何謂「機敏資料」？</h2>
+                <p class="text-slate-600 text-base">
+                    請確保絕對不將下列 <strong>10 大類</strong> 地政及公務機敏資料輸入至未經驗證之雲端 AI 工具：
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-red-100">
-                    <i class="fas fa-id-card text-red-500 mt-1 mr-3 text-lg w-6 text-center"></i>
-                    <span class="text-slate-700">包含身分證字號、姓名、聯絡方式等<strong>民眾個人資料</strong></span>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Item 1 -->
+                <div class="flex items-start bg-white p-4 rounded-xl shadow-sm border border-slate-200/80">
+                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">1</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                        包含身分證字號、姓名、聯絡電話、住址等<strong>民眾個人資料</strong>。
+                    </p>
                 </div>
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-red-100">
-                    <i class="fas fa-microphone-slash text-red-500 mt-1 mr-3 text-lg w-6 text-center"></i>
-                    <span class="text-slate-700">未經公開之<strong>會議紀錄、會議錄音檔</strong>或逐字稿</span>
+
+                <!-- Item 2 -->
+                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
+                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">2</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                        未經公開之<strong>內部會議紀錄、會議錄音檔</strong>或文字逐字稿。
+                    </p>
                 </div>
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-red-100">
-                    <i class="fas fa-home text-red-500 mt-1 mr-3 text-lg w-6 text-center"></i>
-                    <span class="text-slate-700">土地及建物所有權人之<strong>詳細財產清冊與歸戶資訊</strong></span>
+
+                <!-- Item 3 -->
+                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
+                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">3</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                        土地及建物所有權人之<strong>詳細財產清冊與歸戶總冊資訊</strong>。
+                    </p>
                 </div>
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-red-100">
-                    <i class="fas fa-money-bill-trend-up text-red-500 mt-1 mr-3 text-lg w-6 text-center"></i>
-                    <span class="text-slate-700">尚未對外公告之<strong>地價查估草案</strong>、公告土地現值及地價</span>
+
+                <!-- Item 4 -->
+                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
+                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">4</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                        尚未對外公告之<strong>地價查估草案</strong>、公告土地現值及地價評議資料。
+                    </p>
                 </div>
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-red-100">
-                    <i class="fas fa-gavel text-red-500 mt-1 mr-3 text-lg w-6 text-center"></i>
-                    <span class="text-slate-700">法院查封、假扣押、破產等<strong>限制登記內部查辦案件資訊</strong></span>
+
+                <!-- Item 5 -->
+                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
+                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">5</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                        法院查封、假扣押、破產等<strong>限制登記內部查辦與審查案件資訊</strong>。
+                    </p>
                 </div>
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-red-100">
-                    <i class="fas fa-user-secret text-red-500 mt-1 mr-3 text-lg w-6 text-center"></i>
-                    <span class="text-slate-700">民眾檢舉違法案件之<strong>檢舉人身分及調查處理細節</strong></span>
+
+                <!-- Item 6 -->
+                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
+                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">6</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                        民眾檢舉違規案件（如違規使用、預售屋違規）之<strong>檢舉人身分與調查細節</strong>。
+                    </p>
                 </div>
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-red-100">
-                    <i class="fas fa-file-signature text-red-500 mt-1 mr-3 text-lg w-6 text-center"></i>
-                    <span class="text-slate-700">未決行或未經公開之<strong>公文、簽呈及內部決策評估報告</strong></span>
+
+                <!-- Item 7 -->
+                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
+                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">7</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                        未決行或未經公開之<strong>公文簽呈、擬辦意見及內部決策評估報告</strong>。
+                    </p>
                 </div>
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-red-100">
-                    <i class="fas fa-map-marked-alt text-red-500 mt-1 mr-3 text-lg w-6 text-center"></i>
-                    <span class="text-slate-700">區段徵收或市地重劃之<strong>補償費發放清冊與評估底冊</strong></span>
+
+                <!-- Item 8 -->
+                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
+                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">8</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                        區段徵收、市地重劃或農地重劃之<strong>補償費發放清冊與估算底冊</strong>。
+                    </p>
                 </div>
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-red-100">
-                    <i class="fas fa-network-wired text-red-500 mt-1 mr-3 text-lg w-6 text-center"></i>
-                    <span class="text-slate-700">地政資訊系統之<strong>架構設計圖、原始碼、資料庫綱要</strong>或帳號密碼</span>
+
+                <!-- Item 9 -->
+                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
+                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">9</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                        涉及訴願、行政訴訟或國家賠償案件之<strong>內部法律諮詢與法制研判資料</strong>。
+                    </p>
                 </div>
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-red-100">
-                    <i class="fas fa-shield-virus text-red-500 mt-1 mr-3 text-lg w-6 text-center"></i>
-                    <span class="text-slate-700">機關內部之<strong>資安稽核報告、弱點掃描結果</strong>及防禦機制說明</span>
-                </div>
-                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-red-100 md:col-span-2 lg:col-span-1">
-                    <i class="fas fa-file-contract text-red-500 mt-1 mr-3 text-lg w-6 text-center"></i>
-                    <span class="text-slate-700">採購案件之<strong>招標文件草案、評選委員名單及底價表</strong></span>
+
+                <!-- Item 10 -->
+                <div class="flex items-start bg-white p-4 rounded-lg shadow-sm border border-slate-200/80">
+                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 mr-3.5 font-bold text-sm">10</div>
+                    <p class="text-slate-700 text-sm md:text-base leading-snug">
+                        採購案件之<strong>招標文件草案、評選委員名單及底價表</strong>。
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Reference Links -->
-        <section class="bg-white rounded-2xl shadow-md p-8 text-center border border-slate-200">
-            <h2 class="text-2xl font-bold text-slate-800 mb-6">了解更多詳細指引</h2>
-            <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
-                為確保公務資訊安全，請同仁務必詳閱行政院及數位發展部發布之相關指引與手冊，建立正確的使用規範與認知。
+        <!-- Reference Links Section -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 md:p-8 text-center">
+            <h2 class="text-xl md:text-2xl font-bold text-slate-900 mb-3">參考指引與法規規範</h2>
+            <p class="text-slate-600 text-sm md:text-base mb-6 max-w-2xl mx-auto">
+                請同仁參閱行政院及數位發展部相關指引，共同落實公務機密維護：
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://www.nstc.gov.tw/nstc/attachments/da74d556-5b1b-4cbd-9015-901cce87ff91?" target="_blank" class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition duration-300 shadow-sm">
-                    <i class="fas fa-external-link-alt mr-2"></i> 行政院使用生成式 AI 參考指引
+                <a href="https://www.nstc.gov.tw/nstc/attachments/da74d556-5b1b-4cbd-9015-901cce87ff91?" target="_blank" class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-medium transition duration-200 shadow-sm text-sm md:text-base">
+                    <i class="fas fa-file-lines mr-2"></i> 行政院使用生成式 AI 參考指引
                 </a>
-                <a href="/download" 
-   target="_blank" 
-   rel="noopener noreferrer"
-   class="inline-flex items-center justify-center px-6 py-3 bg-teal-600 text-white rounded-lg font-medium hover:bg-teal-700 transition duration-300 shadow-sm">
-   <i class="fas fa-book mr-2"></i> 數位部公部門人工智慧應用手冊
-</a>
-
-
+                <a href="https://moda.gov.tw/digital-affairs/digital-service/ai-resource/18248" target="_blank" class="inline-flex items-center justify-center px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white rounded-xl font-medium transition duration-200 shadow-sm text-sm md:text-base">
+                    <i class="fas fa-book mr-2"></i> 數位部公部門人工智慧應用參考手冊
+                </a>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-6 text-center text-sm">
-        <p>© 2026 玉里地政事務所，資訊安全宣導，請遵守公務機密維護相關規定.</p>
+    <footer class="bg-slate-900 text-slate-400 py-6 text-center text-xs md:text-sm border-t border-slate-800">
+        <p>© 玉里地政資訊安全宣導. 請遵守公務機密及個人資料保護法相關規定.</p>
     </footer>
 
 </body>
